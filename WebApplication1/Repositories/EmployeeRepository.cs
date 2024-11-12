@@ -54,6 +54,7 @@ namespace WebApplication1.Repositories
             // Execute the SQL query and retrieve the new EmployeeId
             var employeeId = await _dbConnection.QuerySingleAsync<int>(sql, parameters);
             return employeeId;
+            // added sample comment
         }
     }
 }
